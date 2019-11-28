@@ -10,13 +10,8 @@ import java.util.List;
 
 public class SourceExtractor {
 	private List<String> mimeTypes;
-	private DittoServlet s;
+
 	public SourceExtractor() {
-		mimeTypes = new ArrayList<String>();
-	}
-	
-	public SourceExtractor(DittoServlet s) {
-		this.s = s;
 		mimeTypes = new ArrayList<String>();
 	}
 	
