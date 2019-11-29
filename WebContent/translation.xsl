@@ -1350,7 +1350,7 @@
                 
                 <!-- not owl axioms ('Facts') -->
                 <xsl:for-each-group select="$rtf/rtf:&axiom;[utls:contains-id($element/@id, @source-id)][empty(@owl-axiom)]" group-by="@name">
-                    <xsl:value-of select="concat($tab, 'Facts: ', @name, ': ', 
+                    <xsl:value-of select="concat($tab, 'Facts: ', @name, ' ', 
                         string-join($rtf/rtf:*[utls:contains-id(@id, current-group()/@target-id)]/@name, ', '), $newline)"/>
                 </xsl:for-each-group>
                 
